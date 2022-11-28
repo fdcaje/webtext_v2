@@ -1,3 +1,5 @@
+@use 'sass:math'
+    
 @mixin webtext
     .webtext
         background: red
@@ -10,10 +12,18 @@
 
     @for $i from 0 through $limit
         @each $s_key, $s_type in $space_type
+            .#{$s_key}_#{$i}
+                #{$s_type}: #{$i}em
             @each $key, $side in $sides
                 .#{$s_key}_#{$key}_#{$i}
                     #{$s_type}-#{$side}: #{$i}em
 
-@mixin flexbox
+@mixin flexbox($n)
+    @for $i from 1 through $n
+        &.col-#{$i}
+            flex-basis: math.percentage(math.div($i, $n))
+
+@mixin text
+    $alignements: (c: center, l: left, r: right, j: justify)
 
 @mixin colors

@@ -25,4 +25,21 @@ body
 
 @include mxn.spacer(5)
 
+.row
+    display: flex
+    flex-flow: row wrap
+    align-items: flex-start
+    justify-content: flex-start
+    margin: -1em
+    .col
+        flex-grow: 1
+        flex-shrink: 1
+        margin: 1em
+        background: pink
+        @include mxn.flexbox(12)
+        &--no-grow
+            flex-grow: 0
+        &--no-shrink
+            flex-shrink: 0
+
 @include mxn.webtext

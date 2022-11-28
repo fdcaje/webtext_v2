@@ -27,6 +27,10 @@ body {
   color: var(--main-text-color);
 }
 
+.p_0 {
+  padding: 0em;
+}
+
 .p_l_0 {
   padding-left: 0em;
 }
@@ -49,6 +53,10 @@ body {
 
 .p_bl_0 {
   padding-block: 0em;
+}
+
+.m_0 {
+  margin: 0em;
 }
 
 .m_l_0 {
@@ -75,6 +83,10 @@ body {
   margin-block: 0em;
 }
 
+.p_1 {
+  padding: 1em;
+}
+
 .p_l_1 {
   padding-left: 1em;
 }
@@ -97,6 +109,10 @@ body {
 
 .p_bl_1 {
   padding-block: 1em;
+}
+
+.m_1 {
+  margin: 1em;
 }
 
 .m_l_1 {
@@ -123,6 +139,10 @@ body {
   margin-block: 1em;
 }
 
+.p_2 {
+  padding: 2em;
+}
+
 .p_l_2 {
   padding-left: 2em;
 }
@@ -145,6 +165,10 @@ body {
 
 .p_bl_2 {
   padding-block: 2em;
+}
+
+.m_2 {
+  margin: 2em;
 }
 
 .m_l_2 {
@@ -171,6 +195,10 @@ body {
   margin-block: 2em;
 }
 
+.p_3 {
+  padding: 3em;
+}
+
 .p_l_3 {
   padding-left: 3em;
 }
@@ -193,6 +221,10 @@ body {
 
 .p_bl_3 {
   padding-block: 3em;
+}
+
+.m_3 {
+  margin: 3em;
 }
 
 .m_l_3 {
@@ -219,6 +251,10 @@ body {
   margin-block: 3em;
 }
 
+.p_4 {
+  padding: 4em;
+}
+
 .p_l_4 {
   padding-left: 4em;
 }
@@ -241,6 +277,10 @@ body {
 
 .p_bl_4 {
   padding-block: 4em;
+}
+
+.m_4 {
+  margin: 4em;
 }
 
 .m_l_4 {
@@ -267,6 +307,10 @@ body {
   margin-block: 4em;
 }
 
+.p_5 {
+  padding: 5em;
+}
+
 .p_l_5 {
   padding-left: 5em;
 }
@@ -291,6 +335,10 @@ body {
   padding-block: 5em;
 }
 
+.m_5 {
+  margin: 5em;
+}
+
 .m_l_5 {
   margin-left: 5em;
 }
@@ -313,6 +361,62 @@ body {
 
 .m_bl_5 {
   margin-block: 5em;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: -1em;
+}
+.row .col {
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 1em;
+  background: pink;
+}
+.row .col.col-1 {
+  flex-basis: 8.3333333333%;
+}
+.row .col.col-2 {
+  flex-basis: 16.6666666667%;
+}
+.row .col.col-3 {
+  flex-basis: 25%;
+}
+.row .col.col-4 {
+  flex-basis: 33.3333333333%;
+}
+.row .col.col-5 {
+  flex-basis: 41.6666666667%;
+}
+.row .col.col-6 {
+  flex-basis: 50%;
+}
+.row .col.col-7 {
+  flex-basis: 58.3333333333%;
+}
+.row .col.col-8 {
+  flex-basis: 66.6666666667%;
+}
+.row .col.col-9 {
+  flex-basis: 75%;
+}
+.row .col.col-10 {
+  flex-basis: 83.3333333333%;
+}
+.row .col.col-11 {
+  flex-basis: 91.6666666667%;
+}
+.row .col.col-12 {
+  flex-basis: 100%;
+}
+.row .col--no-grow {
+  flex-grow: 0;
+}
+.row .col--no-shrink {
+  flex-shrink: 0;
 }
 
 .webtext {
