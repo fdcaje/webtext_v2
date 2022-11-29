@@ -2,8 +2,26 @@
 :root {
   --main-bg: #FFFFFF;
   --main-text-color: #0b0b0b;
-  --clr-light-gray: #e0e2e2;
+  --clr-light-gray: #F5F6F8;
   --base-font-size: 1.8rem;
+  --white: #FFFFFF;
+  --black: #000000;
+  --red: #FF0000;
+  --cherry: #CC1414;
+  --popcorn: #FFF2A6;
+  --margarine: #F2D42D;
+  --orange: #F1890E;
+  --algae: #1BC669;
+  --denim: #0B78E6;
+  --vanadyl: #00A3E3;
+  --united-nation: #5993EA;
+  --ice: #CEE4FA;
+  --alice-blue: #F2FBFF;
+  --cereberal-grey: #CCCCCC;
+  --little-dipper: #E4E6E9;
+  --sefid-white: #FFF2F2;
+  --dugong: #707070;
+  --bauhause: #404040;
   --gap-general: 1em;
 }
 
@@ -48,8 +66,7 @@ body {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 1;
-  margin: 0.5em;
-  background: pink;
+  padding: 0.5em;
 }
 .row .col.col_1 {
   flex-basis: 8.3333333333%;
@@ -501,12 +518,64 @@ body {
   text-transform: capitalize;
   font-weight: 600;
 }
+.btn--fluid {
+  width: 100%;
+}
 .btn__style {
   padding: 0.65em 1em;
   border-radius: 0.15em;
   background-color: var(--clr-light-gray);
   box-shadow: 0px 5px 16px -5px rgba(0, 0, 0, 0.4);
   transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease;
+}
+.btn__style--yellow {
+  background: #F2D42D;
+  color: #000;
+}
+.btn__style--yellow:hover, .btn__style--yellow:active, .btn__style--yellow:focus-within {
+  background: #f9d717;
+}
+.btn__style--green {
+  background: #03c9a9;
+  color: #fff;
+}
+.btn__style--green:hover, .btn__style--green:active, .btn__style--green:focus-within {
+  background: #00d7b4;
+}
+.btn__style--blue {
+  background: #0bcafa;
+  color: #fff;
+}
+.btn__style--blue:hover, .btn__style--blue:active, .btn__style--blue:focus-within {
+  background: #20d2ff;
+}
+.btn__style--orange {
+  background: #f1890e;
+  color: #fff;
+}
+.btn__style--orange:hover, .btn__style--orange:active, .btn__style--orange:focus-within {
+  background: #ff9b21;
+}
+.btn__style--navy {
+  background: #082946;
+  color: #fff;
+}
+.btn__style--navy:hover, .btn__style--navy:active, .btn__style--navy:focus-within {
+  background: #074276;
+}
+.btn__style--red {
+  background: #ed1515;
+  color: #fff;
+}
+.btn__style--red:hover, .btn__style--red:active, .btn__style--red:focus-within {
+  background: #ff1616;
+}
+.btn__style--magenta {
+  background: #ff194a;
+  color: #FFF;
+}
+.btn__style--magenta:hover, .btn__style--magenta:active, .btn__style--magenta:focus-within {
+  background: #ff3661;
 }
 .btn:hover, .btn:active, .btn:focus-within {
   box-shadow: 0px 2px 6px -4.5px rgba(0, 0, 0, 0.75);

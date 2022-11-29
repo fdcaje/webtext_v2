@@ -41,7 +41,11 @@
             $x: 1
         .fs_#{$i}
             font-size: calc(v.$baseFontSize * $x)
-            
-@mixin btnVariant($colors)
+
+@mixin btn($bg, $clr, $hbg: #000)
+    background: $bg
+    color: $clr
+    &:hover, &:active, &:focus-within
+        background: $hbg
 
 @mixin colors

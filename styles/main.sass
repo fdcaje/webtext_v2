@@ -38,8 +38,8 @@ body
         flex-grow: 1
         flex-shrink: 1
         flex-basis: 1
-        margin: .5em
-        background: pink
+        padding: .5em
+        // background: pink
         @include mxn.flexbox(12)
         &--no-grow
             flex-grow: 0
@@ -68,15 +68,28 @@ body
     text-decoration: none
     text-transform: capitalize
     font-weight: 600
+    &--fluid
+        width: 100%
     &__style
         padding: .65em 1em
         border-radius: .15em
         background-color: v.$lightGrayBackground
         box-shadow: 0px 5px 16px -5px rgba(0,0,0,0.4)
         transition: box-shadow .2s ease-in-out, background-color .2s ease
-        
-            
-
+        &--yellow
+            @include mxn.btn(#F2D42D, #000, #f9d717)
+        &--green
+            @include mxn.btn(#03c9a9, #fff, #00d7b4)
+        &--blue
+            @include mxn.btn(#0bcafa, #fff, #20d2ff)
+        &--orange
+            @include mxn.btn(#f1890e, #fff, #ff9b21)
+        &--navy
+            @include mxn.btn(#082946, #fff, #074276)
+        &--red
+            @include mxn.btn(#ed1515, #fff, #ff1616)
+        &--magenta
+            @include mxn.btn(#ff194a, #FFF, #ff3661)
     &:hover, &:active, &:focus-within
         // background-color: red
         box-shadow: 0px 2px 6px -4.5px rgba(0,0,0,0.75)

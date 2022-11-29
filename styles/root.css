@@ -1,7 +1,25 @@
 :root {
   --main-bg: #FFFFFF;
   --main-text-color: #0b0b0b;
-  --clr-light-gray: #e0e2e2;
+  --clr-light-gray: #F5F6F8;
   --base-font-size: 1.8rem;
+  --white: #FFFFFF;
+  --black: #000000;
+  --red: #FF0000;
+  --cherry: #CC1414;
+  --popcorn: #FFF2A6;
+  --margarine: #F2D42D;
+  --orange: #F1890E;
+  --algae: #1BC669;
+  --denim: #0B78E6;
+  --vanadyl: #00A3E3;
+  --united-nation: #5993EA;
+  --ice: #CEE4FA;
+  --alice-blue: #F2FBFF;
+  --cereberal-grey: #CCCCCC;
+  --little-dipper: #E4E6E9;
+  --sefid-white: #FFF2F2;
+  --dugong: #707070;
+  --bauhause: #404040;
   --gap-general: 1em;
 }/*# sourceMappingURL=root.css.map */
