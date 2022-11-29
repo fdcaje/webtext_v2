@@ -1,5 +1,6 @@
 @use 'sass:math'
-    
+@use './variables' as v
+
 @mixin webtext
     .webtext
         background: red
@@ -20,10 +21,27 @@
 
 @mixin flexbox($n)
     @for $i from 1 through $n
-        &.col-#{$i}
+        &.col_#{$i}
             flex-basis: math.percentage(math.div($i, $n))
 
 @mixin text
-    $alignements: (c: center, l: left, r: right, j: justify)
+    $alignments: (c: center, l: left, r: right, j: justify)
+    $cases: (upper: uppercase, lower: lowercase, cap: capitalize)
+    @each $key, $alignment in $alignments
+        .t_align_#{$alignment}
+            text-align: $alignment
+    @each $key, $case in $cases
+        .t_#{$key}
+            text-transform: #{$case}
+
+@mixin fontSize
+    @for $i from 1 through 6
+        $x: math.div($i, 1.35)
+        @if $x < 1
+            $x: 1
+        .fs_#{$i}
+            font-size: calc(v.$baseFontSize * $x)
+            
+@mixin btnVariant($colors)
 
 @mixin colors

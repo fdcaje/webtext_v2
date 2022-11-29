@@ -1,4 +1,5 @@
 *.css.map
+root.css
 mixin.css
 variables.css
 
